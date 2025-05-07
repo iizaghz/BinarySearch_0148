@@ -21,7 +21,7 @@ void input()
     }
 
     cout << "\n=====================\n";
-    cout << "Masukkan Elelmen Array\n";
+    cout << "Masukkan Elemen Array\n";
     cout << "\n=====================\n";
     for (int i = 0; i < nPanjang; i++)
     {
@@ -41,6 +41,7 @@ void bubbleSortArray()
             {
                 int temp = element[j];
                 element[j] = element[j + 1];
+                element [j + 1] = temp;
             }
         }
         pass++;
@@ -102,5 +103,13 @@ void binarySearch()
         cout << "\nIngin mencari lagi? (y/n): ";
         cin >> ulang;
     } while (ulang == 'y' || ulang == 'Y');
+}
+
+int main()
+{
+    input();
+    bubbleSortArray();
+    display();
+    binarySearch();
 }
 
