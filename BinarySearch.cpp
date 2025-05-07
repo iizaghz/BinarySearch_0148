@@ -19,4 +19,9 @@ void input()
             cout << "\n[!] Jumlah elemen tidak boleh lebih daari 10. Silahkan coba lagi.\n";
         }
     }
+
+    cout << "\n=====================\n";
+    cout << "Masukkan Elelmen Array\n";
+    cout << "\n=====================\n";
 }
+
